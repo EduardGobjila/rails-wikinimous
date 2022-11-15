@@ -4,9 +4,7 @@
       <%= @article.title %>
       <small>
         <%= link_to "edit", edit_article_path(@article) %>
-        <%= link_to article_path(@article), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } do %>
-          <i class="fa-regular fa-trash-can"></i>
-        <% end %>
+        <%= link_to "Delete", article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
       </small>
     </h1>
 

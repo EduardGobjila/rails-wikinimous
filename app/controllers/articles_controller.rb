@@ -34,7 +34,7 @@ class ArticlesController < ApplicationController
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
-    redirect_to invoices_path, notice: 'Post was successfully deleted.', status: :see_other
+    redirect_to articles_path, notice: 'Post was successfully deleted.', status: :see_other
   end
 
 
